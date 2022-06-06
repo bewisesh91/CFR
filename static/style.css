@@ -1,0 +1,378 @@
+@font-face {
+  font-family: 'kakao';
+  src: url('/static/font/KakaoBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'kakao-r';
+  src: url('/static/font/KakaoRegular.ttf') format('truetype');
+}
+
+body {
+  background-color: #dde9ff;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+.start-page-image {
+  width: 900px;
+  height: 850px;
+  display: block;
+  margin: auto;
+}  
+
+.start-page-button {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 30px;
+  
+}
+
+.start-page-input{
+  height: 70px;
+  font-size: 25px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  font-family: 'kakao'
+}
+.start-page-btn{
+  height: 70px;
+  font-size: 25px;
+  border-radius: 20px;
+  font-family: 'kakao';
+  cursor: pointer;
+}
+
+.start-page-btn:hover{
+  background-color: #4861da;
+  color: white;
+}
+
+.start-page-input {
+  text-align: center;
+}
+
+/* 공통 : 문제 화면 */
+.progress {
+  height: 30px;
+}
+
+.question-page {
+  margin-top: 10px;
+  display: none;
+}
+
+.question-page-count{
+  margin-top: 10px;
+  font-family: 'kakao-r';
+  font-size: 20px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+/* 개별 : 문제 화면 */
+
+.question-page-CLT, .question-page-FLT, .question-page-RLT {
+  margin-top: 130px;
+  display: none;
+}
+
+.question-page-CLT-content, .question-page-FLT-content, .question-page-RLT-content{
+  font-family: 'kakao';
+  font-size: 50px;
+  text-align: center;
+  width: 95%;
+  display: block;
+  margin: auto;
+}
+
+.question-page-btns {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  margin-top: 80px;
+  margin-left: 15px;
+}
+
+.question-page-checkbtn{
+  zoom: 1.5;
+}
+
+.question-page-btn {
+  font-size: 20px;
+}
+
+.question-page-select{
+  font-family: 'kakao-r';
+  font-size: 30px;
+}
+
+.question-page-next {
+  margin-top: 50px;
+  height: 55px;
+  font-family: 'kakao-r';
+  font-size: 30px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.question-page-next:hover{
+  background-color: #4861da;
+  color: white;
+}
+
+/* 결과 */
+
+.result-page{
+  /* display: none; */
+}
+
+.result-page-text {
+  font-family: 'kakao';
+  margin-top: 50px;
+}
+
+.result-page-text-small {
+  font-family: 'kakao-r';
+  margin-left: 10px;
+}
+
+.result-page-text-small-total {
+  font-family: 'kakao-r';
+  font-size: 20px;
+  text-align: right;
+}
+
+.result-page-CLT-text, .result-page-FLT-text, .result-page-RLT-text{
+  font-size: 25px;
+  font-family: 'kakao';
+  margin-top: 70px;
+}
+
+
+/* 전사 결과 */
+.result-page-CLT-total, .result-page-FLT-total, .result-page-RLT-total {
+  margin-bottom: 5px;
+  height: 50px; 
+}
+.result-page-CLT-total-progress-bar{
+  background-color: #4861da;
+}
+
+.result-page-FLT-total-progress-bar{
+  background-color: #eb5970;
+}
+
+.result-page-RLT-total-progress-bar{
+  background-color: #fadd4b;
+}
+
+.result-page-CLT-total-progress-bar-text, .result-page-FLT-total-progress-bar-text, .result-page-RLT-total-progress-bar-text {
+  font-family: 'kakao-r';
+  font-size: 20px;
+}
+
+
+/* 개별 결과 */
+.result-page-CLT, .result-page-FLT, .result-page-RLT {
+  margin-bottom: 50px;
+  height: 50px; 
+}
+
+.result-page-CLT-progress-bar{
+  background-color: #4861da;
+}
+
+.result-page-FLT-progress-bar{
+  background-color: #eb5970;
+}
+
+.result-page-RLT-progress-bar{
+  background-color: #fadd4b;
+}
+
+.result-page-CLT-progress-bar-text, .result-page-FLT-progress-bar-text, .result-page-RLT-progress-bar-text {
+  font-family: 'kakao-r';
+  font-size: 20px;
+}
+
+
+.result-page-CLT-text-detail{
+  font-family: 'kakao-r';
+  font-size: 20px;
+  width: 1000px;
+}
+
+.result-page-CLT-detail{
+  margin-bottom: 20px;
+}
+
+.result-page-CLT-progress-bar-detail{
+  background-color: #4861da;
+}
+
+.result-page-CLT-progress-bar-detail-value{
+  font-size: 15px;
+}
+
+.result-page-FLT-text-detail{
+  font-family: 'kakao-r';
+  font-size: 20px;
+  width: 1000px;
+}
+
+.result-page-FLT-detail{
+  margin-bottom: 20px;
+}
+
+.result-page-FLT-progress-bar-detail{
+  background-color: #eb5970;
+}
+
+.result-page-FLT-progress-bar-detail-value{
+  font-size: 15px;
+}
+
+.result-page-RLT-text-detail{
+  font-family: 'kakao-r';
+  font-size: 20px;
+  width: 1000px;
+}
+
+.result-page-RLT-detail{
+  margin-bottom: 20px;
+}
+
+.result-page-RLT-progress-bar-detail{
+  background-color: #fadd4b;
+}
+
+.result-page-RLT-progress-bar-detail-value{
+  font-size: 15px;
+}
+
+
+.result-page-CLT-text-detail-original{
+  font-family: 'kakao';
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.result-page-CLT-text-detail2-original{
+  font-family: 'kakao';
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+
+/* CLT */
+.result-page-CLT-areas{
+  display: flex;
+  width: 1110px;
+}
+
+.result-page-CLT-area2{
+  width: 110px;
+  margin-left: 20px;
+}
+
+.result-page-CLT-text-detail2{
+  font-family: 'kakao-r';
+  font-size: 20px;
+  color: #dde9ff;
+}
+
+.result-page-CLT-btn{
+  height: 30px;
+  width: 90px;
+  border-radius: 3px;
+  background-color: #ffbfaa;
+  opacity: 0.5;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: gray;
+}
+
+/* FLT */
+.result-page-FLT-areas{
+  display: flex;
+  width: 1110px;
+}
+
+.result-page-FLT-area2{
+  width: 110px;
+  margin-left: 20px;
+}
+
+.result-page-FLT-text-detail2{
+  font-family: 'kakao-r';
+  font-size: 20px;
+  color: #dde9ff;
+}
+
+.result-page-FLT-btn{
+  height: 30px;
+  width: 90px;
+  border-radius: 3px;
+  background-color: gainsboro;
+  opacity: 0.5;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: gray;
+}
+
+/* RLT */
+.result-page-RLT-areas{
+  display: flex;
+  width: 1110px;
+}
+
+.result-page-RLT-area2{
+  width: 110px;
+  margin-left: 20px;
+}
+
+.result-page-RLT-text-detail2{
+  font-family: 'kakao-r';
+  font-size: 20px;
+  color: #dde9ff;
+}
+
+.result-page-RLT-btn{
+  height: 30px;
+  width: 90px;
+  border-radius: 3px;
+  background-color: #ffbfaa;
+  opacity: 0.5;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: gray;
+}
+
+.result-page-print-btn 
+{
+  font-family: 'kakao-r';
+  font-size: 30px;
+  border-radius: 15px;
+  border: #dde9ff;
+  width: 500px;
+  height: 80px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.result-page-print-btn:hover{
+  background-color: #4861da;
+  color: white;
+}
+
+#canvas{
+  display: none;
+  background-color: #dde9ff;
+}
